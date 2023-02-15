@@ -1,0 +1,74 @@
+####################
+#                  #
+# Copiar todo esto #
+#                  #
+####################
+# Hecho con gusto por Carla Carolina Perez Hernandez (UAEH)
+
+# T1_04_REDES COMPLEJAS(1) - Vision de redes complejas - parte 1
+
+# Objetivo: Estimar el Maximum Spanning Tree -arbol de expansion maxima- (asegurar una vision clara del espacio-producto)
+# Red troncal: Estructura general de la red: vamos a poder ver redes complejas
+
+# Regla 1: mantener n-1 conexiones como maximo
+# Regla 2: Quitar las conexiones con el peso mas bajo, nos vamos quedar con las del peso maximo (menos conexiones)
+# Regla 3: No crear nodos aislados
+# ------------------------------------------------------------------------------------------------------
+# En este ejercicio vamos a:
+# 1. Usar un matriz hipotetica de datos
+# 2. Graficar sus pr?ximos adyacentes
+
+
+##################################################################
+# practica 3: Visi?n clara del espacio-producto: CASO HIPOT?TICO #
+##################################################################
+
+# 1)la visualizaci?n del espacio - producto sea una red conectada: evitar islas de productos aislados. 
+# 2)PROBLEMA: tratar de visualizar demasiados enlaces puede crear una complejidad visual innecesaria 
+# donde se obstruir?n las conexiones m?s relevantes.
+#calculamos el ?rbol de expansi?n m?xima (MST) de la matriz de proximidad. 
+# MST es el conjunto de enlaces que conecta todos los nodos de la red utilizando un n?mero m?nimo de conexiones
+# y la suma m?xima posible de proximidades. 
+#Calculamos el MST usando el algoritmo de Kruskal: B?sicamente, el algoritmo clasifica los valores de la matriz
+# de proximidad en orden descendente y luego incluye enlaces en el MST si y solo si conectan un producto aislado. 
+#Por definici?n, el MST incluye todos los productos, pero el n?mero de enlaces es el m?nimo posible.
+#Despu?s de seleccionar los enlaces utilizando los criterios mencionados anteriormente, 
+# construimos una visualizaci?n utilizando un algoritmo de dise?o dirigido por la fuerza. 
+
+
+
+#crear una matriz aleatoria de 200*200
+
+
+
+
+library (igraph)
+
+
+
+#grafica la matriz
+
+
+
+
+#Transforma la matriz en en NEGATIVA y para identificar los m?ximos
+
+
+
+
+#grafica nueva con matriz negativa, ver el espacio-producto, tecnol?gico 
+
+
+
+# matriz de adyacencias (nuevo relacionamiento)
+# ver las aristas que hay entre los nodos
+
+
+
+#VER LAS ARISTAS(PESOS)
+
+
+#nodos n-1
+
+
+#exportar resultados para cytoscape o gephi
